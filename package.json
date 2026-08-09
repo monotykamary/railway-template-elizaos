@@ -1,0 +1,23 @@
+{
+  "name": "railway-template-elizaos",
+  "version": "1.7.2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun build.ts",
+    "start": "bun dist/server.js"
+  },
+  "dependencies": {
+    "@elizaos/core": "1.7.2",
+    "@elizaos/plugin-bootstrap": "1.7.2",
+    "@elizaos/plugin-openai": "1.6.0",
+    "@elizaos/plugin-sql": "1.7.2",
+    "@elizaos/server": "1.7.2"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
