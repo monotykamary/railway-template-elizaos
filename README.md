@@ -1,6 +1,6 @@
 # ElizaOS on Railway
 
-<!-- The verified Railway deploy button is added after publication. -->
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/elizaos-secure-starter)
 
 A secured [ElizaOS](https://elizaos.ai/) starter pinned to core/server `1.7.2` and OpenAI plugin `1.6.0`. It deploys one agent, persists state in pgvector, and puts both the dashboard and API behind Caddy Basic Auth. Caddy also injects a private ElizaOS API token, so browser clients never need to store it.
 
