@@ -15,6 +15,12 @@ const server = http.createServer((request, response) => {
     requests.push({ method: request.method, url: request.url, body });
     console.log(JSON.stringify({ method: request.method, url: request.url, body }));
 
+    if (request.url === "/healthz") {
+      response.setHeader("content-type", "text/plain");
+      response.end("ok");
+      return;
+    }
+
     if (request.url?.endsWith("/models")) {
       response.setHeader("content-type", "application/json");
       response.end(JSON.stringify({ object: "list", data: [{ id: "gpt-4o", object: "model", created: 0, owned_by: "validation" }] }));
